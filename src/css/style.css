@@ -1,0 +1,91 @@
+body, html { height: 100%; width: 100%; }
+*{
+    font-size:15px
+}
+.container-fluid {
+    height: 100%;
+    display: flex;
+}
+
+form {
+    padding: 20px;
+    min-width: 350px;
+    margin: auto;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(107,107,107,1);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(107,107,107,1);
+    box-shadow: 0px 0px 3px 0px rgba(107,107,107,1);
+}
+
+form * {
+    border-radius: 0 !important;
+}
+
+form > button {
+    width: 100%;
+}
+
+.center {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.center2 {
+    display: inline-block;
+}
+
+.arrowLeft {
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    border-left:1px solid black;
+}
+.arrowRight {
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    border-right:1px solid black;
+}
+.num {
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+
+.pager {
+    text-align: right;
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+}
+  
+table, th, td {
+    border: 1px solid grey;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}
+tr{
+    cursor: pointer;
+}
+.niceColor {
+    background-color: rgba(168,100,0,0.60);
+}
+#falito{
+    font-size:30px;
+    display: inline-block;
+    top:0;
+    left:0;
+    position: absolute;
+    cursor:pointer;
+    z-index: 999;
+}
+/* PÁGINA LINDA PARA DEJAR LINDAS LAS COSAS, NO SÉ HAY MUCHO RE VIOLENTO */
+/* https://www.webucator.com/how-to/how-style-table-with-css.cfm */
