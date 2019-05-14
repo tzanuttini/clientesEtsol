@@ -8,23 +8,22 @@ Vue.use(Router);
 
 export default new Router({
     model: 'prueba',
-    mode: 'history',
     routes: [{
-        path:'/',
-        name:'login',
+        path: '/',
+        name: 'login',
         component: Login
     },
     {
-        path:'/clientes',
-        name:'clientes',
+        path: '/clientes',
+        name: 'clientes',
         component: Clientes,
-        props:true
+        props: true
     },
     {
-        path:'/cliente/:id',
-        name:'detalles',
-        component:Detalles,
-        props:true
+        path: '/cliente/:id',
+        name: 'detalles',
+        component: Detalles,
+        props: true
     }
-]
+    ]
 });

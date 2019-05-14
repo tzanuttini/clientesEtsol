@@ -28,9 +28,6 @@
 </template>
 <script>
 import $ from "jquery";
-import router from "../../router.js";
-import Clientes from "../clientes/clientes.vue";
-import store from "../../main.js";
 export default {
   name: "login",
   props: {},
@@ -54,11 +51,10 @@ export default {
           Authorization: "Basic " + btoa(this.usuario + ":" + this.clave)
         }
       })
-        .done(json => {
+        .done(() => {
           this.$store.commit("setUsuario", this.usuario);
           this.$store.commit("setClave", this.clave);
-          console.log(json);
-          router.push({
+          this.$router.push({
             name: "clientes"
           });
         })
@@ -69,3 +65,9 @@ export default {
   }
 };
 </script>
+<style>
+#login {
+  margin-top: 60px;
+  font-size: 20px;
+}
+</style>
